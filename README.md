@@ -8,9 +8,7 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 ![Memory drawio](https://github.com/Petergtzz/renderer/assets/100330366/77319174-5ba0-4eb2-b638-f588696af303)
 
-*  Allocate a color buffer to store each pixel (4 bytes) across the corresponding display area (2260 * 1440).
-*  Color buffer is a contiguous array in memory, so to display a grid one must loop over the width and height dimensions of the display and color each individual element in the color buffer array given a step.
-
+* To color individual pixels in the color buffer, we must have two neseted loops; one going vertically (height) and horizontally (width). 
 
 ### 3D rotating cube
 
