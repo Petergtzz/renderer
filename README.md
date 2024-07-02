@@ -18,9 +18,3 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 ![Screen Recording 2024-07-02 at 11 16 02 a m](https://github.com/Petergtzz/renderer/assets/100330366/a4d97ccd-e57d-4cdc-886b-c7afaf8d1994)
 
-
-
-
-Steps:
-1. Setup SDL window, renderer, and texture.
-2. Implement logic to render something each frame. i.e setup, and loop; process input, update, and render until quit key is pressed. 
