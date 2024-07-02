@@ -8,7 +8,7 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 ![Memory drawio](https://github.com/Petergtzz/renderer/assets/100330366/77319174-5ba0-4eb2-b638-f588696af303)
 
-* To color individual pixels in the color buffer, we must have two neseted loops; one going vertically (height) and horizontally (width). 
+* To color individual pixels in the color buffer, we must have two neseted loops; one going vertically (height) and horizontally (width). e.g. to create a white dotted grid, color each pixel by indexing color_buffer[(Width * y) + x]; x colors pixels horizontally and to skip an entire row,  
 
 ### 3D rotating cube
 
