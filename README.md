@@ -12,7 +12,9 @@ Steps:
 1. Setup SDL window, renderer, and texture.
 2. Implement logic to render something each frame. i.e setup, and loop; process input, update, and render until quit key is pressed. 
 -  Allocate a color buffer to store each pixel (4 bytes) across the corresponding display area (2260 * 1440).
--  Color buffer is a contiguous array in memory, so to display a grid one must loop of the width and height dimensions of the display and color each individual element in the color buffer array given a step. e.g color buffer = [black] [black] [white] [black] [black] [white] [black] [black] [white] [] [] [] [] [] [] [] [] [] 
+-  Color buffer is a contiguous array in memory, so to display a grid one must loop over the width and height dimensions of the display and color each individual element in the color buffer array given a step.
+   e.g color buffer = [black] [black] [white] [black] [black] [white] [black] [black] [white] [black] [black] [white] [black] [black] 
+                      [black] [black] [white] [black] [black] [white] [black] [black] [white] [black] [black] [white] [black] [black]  
 
 
 3. 
