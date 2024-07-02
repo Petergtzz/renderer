@@ -12,8 +12,6 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 ### Displaying a 3D object in a 2D screen
 
-### 3D rotating cube
-
 ![Screen Recording 2024-06-23 at 12 46 15 p m](https://github.com/Petergtzz/renderer/assets/100330366/fa8b5db3-cc75-426b-ba56-4346a62ab6cd)
 
 ### 3D rotating cube with vertices, edges, and faces
