@@ -11,8 +11,8 @@ Static 3D image of a cube
 Steps:
 1. Setup SDL window, renderer, and texture.
 2. Implement logic to render something each frame. i.e setup, and loop; process input, update, and render until quit key is pressed. 
-- 1. Allocate a color buffer to store each pixel (4 bytes) across the corresponding display area (2260 * 1440).
-- 2. Create a function to 
+-  Allocate a color buffer to store each pixel (4 bytes) across the corresponding display area (2260 * 1440).
+-  Create a function to 
 
 
 3. 
