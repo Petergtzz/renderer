@@ -20,11 +20,10 @@ Perspective projection is similar to how humans perceive the real world. In this
 
 * Because we are working in a 2D plane (the screen), we must apply a transformation to each individual pixel; each with their corresponding [x, y, z] values. This transformation comes by applying a property, i.e triangles that have the same shape, but one is a scaled version of the other, share a side ratio.
 
-$BC/DE = AB/AD$  
-$\fracc{x'/x} = 1/z$ 
-
 $\frac{BC}{DE} = \frac{AB}{AD}$
+
 $\frac{y'}{y} = \frac{1}{z}$
+
 $y' = \frac{y}{z}$
 
 
