@@ -16,6 +16,8 @@ Perspective projection is similar to how humans perceive the real world. In this
 
 <img width="1280" alt="Screenshot 2024-07-03 at 1 02 32 p m" src="https://github.com/Petergtzz/renderer/assets/100330366/02de5923-02e3-4ab6-809c-5f004f9e0d4e">
 
+![Side drawio](https://github.com/Petergtzz/renderer/assets/100330366/5f2ffc65-5f0a-4155-a9b5-0e866af0b2f0)
+
 * Because we are working in a 2D plane (the screen), we must apply a transformation to each individual pixel; all of them have their corresponding [x, y, z] values. This transformation comes by applying a property, i.e triangles that have the same shape, but one is a scaled version of the other, share a side ratio.
 
 $BC/DE = AB/AD$  
