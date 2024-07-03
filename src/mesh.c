@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <string.h>
 #include "mesh.h"
 #include "triangle.h"
 #include "vector.h"
 #include "array.h"
+
+#define FILE_BUFFER 100
 
 mesh_t Mesh = {
     .Vertices = NULL,
@@ -54,5 +57,50 @@ void LoadCubeData()
     {
         face_t CubeFace = CubeMeshFaces[i];
         array_push(Mesh.Faces, CubeFace);
+    }
+}
+
+void LoadObjFile(char *FileName)
+{
+    FILE *File = fopen(FileName, "r");
+
+    if(File)
+    {
+        char FileBuffer[FILE_BUFFER];
+
+        while(fgets(FileBuffer, FILE_BUFFER, File))
+        {
+            // Vertex information
+            if(strncmp(FileBuffer, "v ", 2) == 0)
+            {
+                vec3_t Vertex;
+                sscanf(FileBuffer, "v %f %f %f", &Vertex.x, &Vertex.y, &Vertex.z);
+                array_push(Mesh.Vertices, Vertex);
+            }
+
+            // Face information
+            if(strncmp(FileBuffer, "f ", 2) == 0)
+            {
+                int VertexIndices[3];
+                int TextureIndices[3];
+                int NormalIndices[3];
+                sscanf(FileBuffer,
+                    "f %d/%d/%d %d/%d/%d %d/%d/%d",
+                    &VertexIndices[0], &TextureIndices[0], &NormalIndices[0],
+                    &VertexIndices[1], &TextureIndices[1], &NormalIndices[1],
+                    &VertexIndices[2], &TextureIndices[2], &NormalIndices[2]);
+                face_t Faces = {
+                    .a = VertexIndices[0],
+                    .b = VertexIndices[1],
+                    .c = VertexIndices[2],
+                };
+                array_push(Mesh.Faces, Faces);
+            }
+        }
+        fclose(File);
+    }
+    else
+    {
+        fprintf(stderr, "Error: Unable to open file\n");
     }
 }

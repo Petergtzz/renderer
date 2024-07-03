@@ -19,4 +19,6 @@ typedef struct
 
 extern void LoadCubeData();
 
+extern void LoadObjFile(char *FileName);
+
 #endif

@@ -17,7 +17,7 @@
 #include "mesh.c"
 
 // Field of view
-#define FOV 640
+#define FOV 1024
 
 // #define NPOINTS (9*9*9)
 
@@ -74,7 +74,8 @@ static void OSX_Setup(SDL_Renderer *Renderer)
         WindowWidth,
         WindowHeight);
 
-    LoadCubeData();
+    //LoadCubeData();
+    LoadObjFile("assets/f22.obj");
 
     /*
         Fill the x, y, and z coordinates for each pixel in the Cube array.
@@ -122,8 +123,8 @@ static void OSX_Update()
     TrianglesToRender = NULL;
 
     Mesh.Rotation.x += 0.003;
-    Mesh.Rotation.y += 0.003;
-    Mesh.Rotation.z += 0.003;
+    //Mesh.Rotation.y += 0.003;
+    //Mesh.Rotation.z += 0.003;
 
     int NumFaces = array_length(Mesh.Faces);
     for (int i = 0; i < NumFaces; i++)
@@ -143,7 +144,7 @@ static void OSX_Update()
 
             TransformedVertex = Vec3RotateX(TransformedVertex, Mesh.Rotation.x);
             TransformedVertex = Vec3RotateY(TransformedVertex, Mesh.Rotation.y);
-            TransformedVertex = Vec3RotateZ(TransformedVertex, Mesh.Rotation.x);
+            TransformedVertex = Vec3RotateZ(TransformedVertex, Mesh.Rotation.z);
 
             // Translate vertex away from camera
             TransformedVertex.z -= CameraPosition.z;
@@ -206,7 +207,7 @@ static void OSX_Render(SDL_Renderer *Renderer)
             Triangle.Points[1].y,
             Triangle.Points[2].x,
             Triangle.Points[2].y,
-            0xFF0000FF);
+            0xFFFFFF00);
     }
 
         /* Mapping x and y on the screen start from the upper left corner (0, 0), so  to visualize each pixel we must position them in the middle of the screen by adding a certain amount.
