@@ -14,7 +14,7 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 Perspective projection is similar to how humans perceive the real world. In this type of projection, vertices that are close to us appear bigger and things that are far away appear smaller.
 
-![_Top drawio](https://github.com/Petergtzz/renderer/assets/100330366/024c908c-c937-42a0-82fe-9505b8ed2c33)
+![Untitled Diagram drawio](https://github.com/Petergtzz/renderer/assets/100330366/15d8c69c-0bb3-41f2-8ea4-75a1661c103f)
 
 
 
