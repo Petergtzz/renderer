@@ -22,3 +22,9 @@ Perspective projection is similar to how humans perceive the real world. In this
 
 $BC/DE = AB/AD$  
 $\fracc{x'/x} = 1/z$ 
+
+$\frac{BC}{DE} = \frac{AB}{AD}$
+$\frac{y'}{y} = \frac{1}{z}$
+$y' = \frac{y}{z}$
+
+
