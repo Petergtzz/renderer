@@ -14,6 +14,10 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 Perspective projection is similar to how humans perceive the real world. In this type of projection, vertices that are close to us appear bigger and things that are far away appear smaller.
 
+![_Top drawio](https://github.com/Petergtzz/renderer/assets/100330366/024c908c-c937-42a0-82fe-9505b8ed2c33)
+
+
+
 ![Screen Recording 2024-06-23 at 12 46 15 p m](https://github.com/Petergtzz/renderer/assets/100330366/fa8b5db3-cc75-426b-ba56-4346a62ab6cd)
 
 ### 3D rotating cube with vertices, edges, and faces
