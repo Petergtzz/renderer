@@ -28,10 +28,18 @@ $y' = \frac{y}{z}$
 
 ## Screenshots and videos
 
+Static 9*9*9 cube made of individual pixels
+
 <img width="2560" alt="Screenshot 2024-06-19 at 1 54 12 p m" src="https://github.com/Petergtzz/renderer/assets/100330366/6cea3484-2850-46e8-9113-f6596571e8d5">
+
+Same, but rotating cube
 
 ![Screen Recording 2024-06-23 at 12 46 15 p m](https://github.com/Petergtzz/renderer/assets/100330366/c6b1ed88-2057-4f77-8ec7-bbf8eb049388)
 
+Cube made of vertices and triangular faces
+
 ![Screen Recording 2024-07-02 at 11 16 02 a m](https://github.com/Petergtzz/renderer/assets/100330366/c8b1869d-ec57-4f50-a40f-e9277a98c745)
+
+F22 raptor loaded as OBJ file
 
 ![Screen Recording 2024-07-03 at 12 24 04 p m](https://github.com/Petergtzz/renderer/assets/100330366/fa2ed3c4-6457-4e63-8dd1-777fa427bd3a)
