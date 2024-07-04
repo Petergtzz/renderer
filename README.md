@@ -8,7 +8,7 @@ This software renderer is written from scratch in C11 with SDL2 as the only depe
 
 ![Memory drawio](https://github.com/Petergtzz/renderer/assets/100330366/77319174-5ba0-4eb2-b638-f588696af303)
 
-* To color individual pixels in the color buffer, we must have two nested loops; one going vertically (height) and one going horizontally (width). e.g. to create a white dotted grid, color each pixel by indexing color_buffer[(Width * y) + x]; x colors pixels horizontally and to skip an entire row, we multiply by the width and y to go down vertically. 
+Rendering an object to a sceen requires individual pixels to light up. So, by allocating space in memory for a color buffer we can color individual pixels. It is important to mention that the color buffer array is not a matrix of n x m, instead, is a contiguous array in memory. 
 
 ### Perspective projection
 
