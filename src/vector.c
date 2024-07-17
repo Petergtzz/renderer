@@ -28,19 +28,19 @@ vec2_t Vec2Sub(vec2_t a, vec2_t b)
     }
 }
 
-vec2_t Vec2Mul(vec2_t a, float factor)
+vec2_t Vec2Mul(vec2_t v, float factor)
 {
     vec2_t Result = {
-        .x = a.x * factor,
-        .y = a.y * factor
+        .x = v.x * factor,
+        .y = v.y * factor
     };
     return Result;
 }
-vec2_t Vec2Div(vec2_t a, float factor)
+vec2_t Vec2Div(vec2_t v, float factor)
 {
     vec2_t Result = {
-        .x = a.x / factor,
-        .y = a.y / factor
+        .x = v.x / factor,
+        .y = v.y / factor
     };
     return Result;
 }
@@ -64,38 +64,39 @@ vec3_t Vec3Add(vec3_t a, vec3_t b)
 
 vec3_t Vec3Sub(vec3_t a, vec3_t b)
 {
-    {
-        vec3_t Result = {
-            .x = a.x - b.x,
-            .y = a.y - b.y,
-            .z = a.z - b.z
-        };
-        return Result;
-    }
+    vec3_t Result = {
+        .x = a.x - b.x,
+        .y = a.y - b.y,
+        .z = a.z - b.z};
+    return Result;
 }
 
-vec3_t Vec3Mul(vec3_t a, float factor)
+vec3_t Vec3Mul(vec3_t v, float factor)
 {
-    {
-        vec3_t Result = {
-            .x = a.x * factor,
-            .y = a.y * factor,
-            .z = a.z * factor
-        };
-        return Result;
-    }
+    vec3_t Result = {
+        .x = v.x * factor,
+        .y = v.y * factor,
+        .z = v.z * factor};
+    return Result;
 }
 
-vec3_t Vec3Div(vec3_t a, float factor)
+vec3_t Vec3Div(vec3_t v, float factor)
 {
-    {
-        vec3_t Result = {
-            .x = a.x / factor,
-            .y = a.y / factor,
-            .z = a.z / factor
-        };
-        return Result;
-    }
+    vec3_t Result = {
+        .x = v.x / factor,
+        .y = v.y / factor,
+        .z = v.z / factor};
+    return Result;
+}
+
+vec3_t Vec3Cross(vec3_t a, vec3_t b)
+{
+    vec3_t Result = {
+        .x = a.x * b.z - a.z * b.y,
+        .y = a.z * b.x - a.x * b.z,
+        .z = a.x * b.y - a.y * b.x,
+    };
+    return Result;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

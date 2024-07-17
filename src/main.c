@@ -75,7 +75,7 @@ static void OSX_Setup(SDL_Renderer *Renderer)
         WindowHeight);
 
     //LoadCubeData();
-    LoadObjFile("assets/f22.obj");
+    LoadObjFile("assets/cube.obj");
 
     /*
         Fill the x, y, and z coordinates for each pixel in the Cube array.
